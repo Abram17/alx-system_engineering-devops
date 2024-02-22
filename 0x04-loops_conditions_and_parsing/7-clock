@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # displays time for 12 Hours and 59 mins.
-
 Hours=0
 while [ $Hours -lt 13 ]
 do
