@@ -1,19 +1,17 @@
 #!/usr/bin/env bash
 # displays numbers from 1 to 100 with special cases
-count=1
-while [ $count -lt 101 ]
+for i in {1..100}
 do
-if [ $((count % 15)) = 0 ]
+if ((i % 15 == 0))
 then
 echo "FizzBuzz"
-elif [ $((count % 3)) = 0 ]
-then
-echo "Fizz"
-elif [ $((count % 5)) = 0 ]
+elif ((i % 5 == 0))
 then
 echo "Buzz"
+elif (( i % 3 == 0))
+then
+echo "Fizz"
 else
-echo "$count"
+echo "$i"
 fi
-let count+=1
 done
