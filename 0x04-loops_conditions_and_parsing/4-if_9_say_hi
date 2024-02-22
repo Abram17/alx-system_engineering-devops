@@ -2,6 +2,7 @@
 # displays Best School 10 times.
 
 COUNTER=0
+
 while [ $COUNTER -lt 11 ]
 do
 	if [ $COUNTER = 9 ]
