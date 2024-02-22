@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# displays "Holberton School" 10 times
-# but for the 9th iteration, displays Best School and then Hi on a new line.
+# displays "Best School" 10 times with a special case in 9
 i="0"
 while [ $i -lt 10 ]
 do
