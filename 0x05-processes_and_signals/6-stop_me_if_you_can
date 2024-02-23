@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Killing made easy
+
+pkill -f beyond
