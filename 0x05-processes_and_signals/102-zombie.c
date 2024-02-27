@@ -4,11 +4,11 @@
 #include <sys/wait.h>
 
 /**
- * main - zombies
+ * main - entry point
  *
- * Description: make five zombies
+ * Description: make five zombie processes
  *
- * Return: 0
+ * Return: 0 when success
 */
 
 int main(void)
