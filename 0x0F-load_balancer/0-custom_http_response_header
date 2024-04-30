@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 # configures a new Ubuntu machine
 
+
 apt-get -y update
 apt-get -y install nginx
 
-HOST_NAME=$(506651)
+HOST_NAME=$(ubuntu)
 HEADER="\\\n\tadd_header X-Served-By $HOST_NAME;\n"
 FIND=$(grep "X-Server-by" /etc/nginx/sites-available/default)
 if [[ -z $FIND ]]; then
