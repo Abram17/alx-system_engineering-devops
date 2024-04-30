@@ -5,7 +5,7 @@
 apt-get -y update
 apt-get -y install nginx
 
-HOST_NAME=$(ubuntu)
+HOST_NAME=$(hostname)
 HEADER="\\\n\tadd_header X-Served-By $HOST_NAME;\n"
 FIND=$(grep "X-Server-by" /etc/nginx/sites-available/default)
 if [[ -z $FIND ]]; then
